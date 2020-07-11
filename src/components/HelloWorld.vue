@@ -24,7 +24,8 @@
 </template>
 
 <script>
-import axios from "axios"
+// import axios from "axios"
+import jsonp from "jsonp"
 export default {
   name: 'HelloWorld',
   data(){
@@ -34,8 +35,14 @@ export default {
   },
   mounted(){
     let url = "https://www.easy-mock.com/mock/5b012c1fe6e1035843cd3aff/mockapi/table/list"
-    axios.get(url).then(()=>{
-
+  //   axios.get(url).then(()=>{
+  // })
+  //    jsonp(url,{参数}，(err,res)=>{
+        // let  result = res;
+        // this.data = result;
+  // })
+    jsonp(url,()=>{
+    
   })
   },
   props: {
