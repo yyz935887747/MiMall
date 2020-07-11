@@ -24,8 +24,20 @@
 </template>
 
 <script>
+import axios from "axios"
 export default {
   name: 'HelloWorld',
+  data(){
+    return{
+      age:20
+    }
+  },
+  mounted(){
+    let url = "https://www.easy-mock.com/mock/5b012c1fe6e1035843cd3aff/mockapi/table/list"
+    axios.get(url).then(()=>{
+
+  })
+  },
   props: {
     msg: String
   }

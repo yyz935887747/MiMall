@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+// 路由引进的两种方式
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
