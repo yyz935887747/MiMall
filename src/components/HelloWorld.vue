@@ -30,20 +30,19 @@ export default {
   name: 'HelloWorld',
   data(){
     return{
+      data :'',
       age:20
     }
   },
   mounted(){
-    let url = "https://www.easy-mock.com/mock/5b012c1fe6e1035843cd3aff/mockapi/table/list"
+    let url = "https://www.imooc.com/common/adver-getadver"
   //   axios.get(url).then(()=>{
   // })
-  //    jsonp(url,{参数}，(err,res)=>{
-        // let  result = res;
-        // this.data = result;
-  // })
-    jsonp(url,()=>{
-    
+     jsonp(url,(err,res)=>{
+        let  result = res;
+        this.data = result;
   })
+ 
   },
   props: {
     msg: String
