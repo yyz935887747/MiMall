@@ -1,5 +1,6 @@
 <template>
     <div>
+        我是home页面
         <nav-header></nav-header>
         <router-view></router-view>
         <nav-footer></nav-footer>
@@ -7,8 +8,15 @@
 </template>
 
 <script>
+import NavFooter from '../components/NavFooter'
+import NavHeader from '../components/NavHeader'
+
 export default{
-    name:"home"
+    name:"home",
+    components:{
+        NavFooter,
+        NavHeader,
+    }
 }
 </script>
 
