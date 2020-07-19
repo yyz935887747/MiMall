@@ -5,9 +5,18 @@ import VueAxios from 'vue-axios'
 import router from './router'
 import store from './store'
 
+
+// 设置mock开关
+const mock = false ;  
+  if(mock){
+    // 相当于引入文件
+  require('./mock/api')
+}
+ 
 // 发送请求的时候设置基础值：根据前跨域的方式做调整/a/b  /api/a/b
-// axios.defaults.baseURL = "/api";
+axios.defaults.baseURL = "/api";
 axios.defaults.timeout = 8000;
+
 
 //接口误拦截
 axios.interceptors.response.use(function(response){

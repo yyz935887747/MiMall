@@ -20,6 +20,10 @@
     //    this.res = res;
     // })
     
+    // 集成Mock  API
+    //  this.axios.get("/user/login").then((res)=>{
+    //    this.res = res;
+    //  })
   }
 }
 
