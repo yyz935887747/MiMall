@@ -1,13 +1,65 @@
 <template>
-   <div>我是头 </div> 
+  <div class="header">
+    <div class="nav-topbar">
+       <div class="container">
+         <div class="topbar-mume">
+           <!--  href="javascript:;----作用页面不会刷新 -->
+           <a href="javascript:;">小米商城</a>
+           <a href="javascript:;">MUI</a>
+           <a href="javascript:;">云服务</a>
+           <a href="javascript:;">协议规则</a>
+         </div>
+         <div class="topbar-user">
+           <a href="javascript:;">登录</a>
+           <a href="javascript:;">注册</a>
+           <a href="javascript:;" class="my-cart"><span class="icon-cart"></span> 购物车</a>
+         </div>
+       </div>
+    </div>
+    <div class="nav-header"></div>
+  </div>
 </template>
 
-[<script>
+<script>
   export default{
       name:"nav-header",
   }
 </script>
-<style lang="less" scoped>
-
+<style lang="scss" scoped>
+ .header{
+   .nav-topbar{
+     height: 39px; 
+     line-height: 39px;
+     background-color: #333333;
+     .container{
+       width: 1226px;
+  //   margin: 0 auto;
+       margin-right: auto;
+       margin-left: auto;
+       display: flex;
+       justify-content: space-between;
+       a{
+         display: inline-block;
+         color: #B0B0B0;
+         margin-right:17px;
+        }
+        .my-cart{
+          width: 110px;
+          background-color: #FF6600;
+          text-align: center;
+          color:#ffffff;
+          .icon-cart{
+            display: inline-block;
+            height:12px ;
+            width: 16px;
+            margin-right:4px;
+            background:url('/imgs/icon-cart-checked.png') no-repeat center;
+            background-size: contain;
+          }
+        }
+     }
+     
+   }
+ }
 </style>
 
