@@ -1,5 +1,5 @@
 <template>
-    <div>我是脚</div>
+    <div></div>
 </template>
 
 <script>
