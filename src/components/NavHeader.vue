@@ -3,7 +3,7 @@
     <div class="nav-topbar">
       <div class="container">
         <div class="topbar-mume">
-          <!--  href="javascript:;----作用页面不会刷新 -->
+          <!--  href="javascript:;作用页面不会刷新 -->
           <a href="javascript:;">小米商城</a>
           <a href="javascript:;">MUI</a>
           <a href="javascript:;">云服务</a>
@@ -277,6 +277,7 @@ export default {
             border-top: 1px solid #e5e5e5;
             box-shadow: 0px 7px 6px -1px rgba(0, 0, 0, 0.11);
             z-index: 10;
+            background-color: #ffffff;
             transition: height 0.5s;
             .product {
               position: relative;

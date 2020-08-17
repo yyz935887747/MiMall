@@ -5,7 +5,9 @@ import VueAxios from 'vue-axios'
 import router from './router'
 import store from './store'
 
-
+// import VueAwesomeSwiper from 'vue-awesome-swiper'
+// Vue.use(VueAwesomeSwiper) 
+// import 'swiper/dist/css/swiper.css'
 // 设置mock开关
 const mock = false ;  
   if(mock){
